@@ -4,6 +4,7 @@ const app = express()
 const fs = require("fs"); 
 
 app.use(cors());
+const port = process.env.PORT || 5000;
 
 app.get("/api", (req, res) => {
     res.json({"users": ["userOne", "userTwo", "userThree"]})
@@ -33,4 +34,4 @@ app.get('/api/movies/search', (req, res) => {
     });
 });
 
-app.listen(5000, ()=> {console.log("server started on 5000")})
+app.listen(port, ()=> {console.log(`server started on ${port}`)})
