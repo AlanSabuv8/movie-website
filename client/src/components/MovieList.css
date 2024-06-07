@@ -169,8 +169,10 @@ nav.bg-body-tertiary{
 }
 
 .movielst{
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 5%;
-  
+
 }
 
 .movielst h4{
@@ -311,6 +313,18 @@ nav.bg-body-tertiary{
     color: black;  
 }
 
+
+@media (max-width: 380px) {
+  .movielst{
+    transform: translateX(+5%);
+  }
+
+  .carousel{
+    transform: translateX(+10%);
+  }
+}
+
+
 @media (max-width: 575px) {
 
 
@@ -356,7 +370,7 @@ nav.bg-body-tertiary{
   }
 
   .movielst{
-    padding-left: 18% !important;
+    padding-left: 25% !important;
     padding-right: auto !important;
   }
 
@@ -430,6 +444,34 @@ nav.bg-body-tertiary{
   .btn p{
     font-size: 9px;
   }
+}
+
+@media (max-width: 1200px) {
+
+  .movie-card {
+    width: 200px !important;
+  }
+
+  .movie-card img {
+    border-radius: 16px;
+    width: 200px;
+    height: 100%;
+  }
+  .movie-card .heart-icon {
+    transform: translateX(-190%);
+  }
+}
+
+@media (max-width: 1400px) {
+  .movie-card {
+    width: 250px !important;
+  }
+  
+  .movie-card img {
+    border-radius: 16px;
+    height: 100%;
+  }
+  
 }
 
 
