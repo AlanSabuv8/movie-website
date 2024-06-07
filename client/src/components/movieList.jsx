@@ -28,7 +28,7 @@ const MovieList = () => {
   }, [favorites]);
 
   const fetchMovies = () => {
-    fetch('http://localhost:5000/api/movies')
+    fetch('https://movie-website-5v52.onrender.com/api/movies')
       .then(response => response.json())
       .then(data => setMovies(data.movies))
       .catch(error => console.error('Error fetching movies:', error));
@@ -36,7 +36,7 @@ const MovieList = () => {
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
-    fetch(`http://localhost:5000/api/movies/search?title=${searchQuery}`)
+    fetch(`https://movie-website-5v52.onrender.com/api/movies/search?title=${searchQuery}`)
       .then(response => response.json())
       .then(data => setFilteredMovies(data.movies))
       .catch(error => console.error('Error searching movies:', error));
@@ -191,7 +191,7 @@ const MovieList = () => {
                     <Carousel.Caption>
                       <h3>Spider-Man: Into The Spider Verse</h3>
                       <p>Teen Miles Morales teams up with Gwen Stacy on a new adventure, facing sinister foe The Spot and a vast legion of parallel heroes in the Multiverse.</p>
-                      <a className="btn btn-danger justify-content-center" href="https://www.youtube.com/watch?v=g4Hbz2jLxvQ" role="button"><FaCirclePlay /><p>Watch trailer</p></a>
+                      <a className="btn btn-danger justify-content-center" href="https://www.youtube.com/watch?v=g4Hbz2jLxvQ" role="button"><FaCirclePlay className='playbtn'/><p>Watch trailer</p></a>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item className='car'>
@@ -209,7 +209,7 @@ const MovieList = () => {
                         Shawn LevyRhett ReeseRyan Reynolds
                         Stars
                         Ryan ReynoldsHugh JackmanEmma Corrin</p>
-                        <a className="btn btn-danger justify-content-center" href="https://www.youtube.com/watch?v=uJMCNJP2ipI" role="button"><FaCirclePlay /><p>Watch trailer</p></a>
+                        <a className="btn btn-danger justify-content-center" href="https://www.youtube.com/watch?v=uJMCNJP2ipI" role="button"><FaCirclePlay className='playbtn'/><p>Watch trailer</p></a>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item className='car'>
@@ -221,7 +221,7 @@ const MovieList = () => {
                     <Carousel.Caption>
                       <h3>Blue Eye Samurai</h3>
                       <p>Blue Eye Samurai is an adult animated action television series created and written for Netflix by wife-and-husband team Amber Noizumi and Michael Green, with supervising director and series producer Jane Wu. It was co-produced and animated by French studio Blue Spirit.</p>
-                        <a className="btn btn-danger justify-content-center" href="https://www.youtube.com/watch?v=nJ1yQn17lbE" role="button"><FaCirclePlay /><p>Watch trailer</p></a>
+                        <a className="btn btn-danger justify-content-center" href="https://www.youtube.com/watch?v=nJ1yQn17lbE" role="button"><FaCirclePlay className='playbtn'/><p>Watch trailer</p></a>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item className='car'>
@@ -233,7 +233,7 @@ const MovieList = () => {
                     <Carousel.Caption>
                       <h3>Furiosa: A Mad Max Saga</h3>
                       <p>Snatched from the Green Place of Many Mothers, young Furiosa falls into the hands of a great biker horde led by the warlord Dementus. Sweeping through the Wasteland, they come across the Citadel, presided over by the Immortan Joe. As the two tyrants fight for dominance, Furiosa soon finds herself in a nonstop battle to make her way home.</p>
-                        <a className="btn btn-danger justify-content-center" href="https://www.youtube.com/watch?v=XJMuhwVlca4" role="button"><FaCirclePlay /><p>Watch trailer</p></a>
+                        <a className="btn btn-danger justify-content-center" href="https://www.youtube.com/watch?v=XJMuhwVlca4" role="button"><FaCirclePlay className='playbtn'/><p>Watch trailer</p></a>
                     </Carousel.Caption>
                   </Carousel.Item>
                 </Carousel>
