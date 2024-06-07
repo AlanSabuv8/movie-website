@@ -1,0 +1,330 @@
+.full{
+  font-family: "DM Sans";
+}
+
+
+nav.bg-body-tertiary{
+    background-color: white;
+    padding: 32px 98px;
+}
+
+.left-navbar{
+    align-items: center;
+}
+
+.title{
+    font-weight: 600;
+}
+
+.movieLogo{
+    width: 50px;
+    height: 50px;
+    background-color: #ff0059;
+    border-radius: 30px;
+    padding: 12px;
+}
+
+.movIcon{
+    width: 25px;
+    height: 25px;
+    top: 2px;
+    left: 1.33px;
+    color: #ffffff;
+    border: 1.4px;
+    display: block;
+}
+
+.search-bar-container {
+    position: relative;
+    display: inline-block;
+    width: 800px;
+}
+  
+.search-bar-wrapper {
+    position: relative;
+}
+  
+.searchIcon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 47px;
+    height: 20px;
+    color: rgb(158, 156, 156);
+    pointer-events: none; 
+}
+
+.search-input {
+    padding-left: 70px !important; 
+    padding-right: 10px !important; 
+    height: calc(2.25rem + 2px) !important; 
+    width: 500px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 8px !important;
+    font-family: "Inter";
+}
+
+@media (min-width: 400px) {
+    .search-input {
+        width: 300px !important; 
+    }
+}
+
+@media (min-width: 768px) {
+    .search-input {
+        width: 400px !important; 
+    }
+}
+
+.favButton{
+    position: relative;
+    background-color: #ff0059 !important;
+}
+
+.buttonCont{
+  width: 180px;
+  justify-content: center;
+}
+
+.heart{
+  transform: translateX(+70%);
+}
+
+.buttonCont h6{
+  font-family: "Inter";
+  font-weight: 500;
+  transform: translateY(15%);
+}
+
+.heart{
+  width: 20px;
+  height: 20px;
+}
+
+.custom-carousel {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%; 
+  max-height: 600px;
+  border-radius: 16px; 
+  overflow: hidden; 
+}
+  
+.custom-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit:inherit;
+}
+
+.carousel-caption {
+    gap: 16px;
+    text-align: left !important; 
+    transform: translateY(-25%);
+}
+  
+.carousel-caption h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+  
+.carousel-caption p {
+  font-size: 1.25rem;
+  max-width: 400px;
+}
+  
+.carousel-caption a {
+  background-color: #ffffff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff0059;
+  max-height: 40px;
+  max-width: 155px;
+}
+
+.btn p{
+  color: #000;
+  font-size: 16px;
+  font-weight: 600 !important;
+  padding: 8px;
+  transform: translateY(+20%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none !important;
+}
+
+.custom-carousel .carousel-indicators {
+  right: 10px;
+  left: auto;
+  width: auto;
+}
+
+.carousel .carousel-indicators button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 24px;
+  width: 8px;
+  height: 8px;
+}
+
+.carousel .carousel-indicators button.active {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 24px;
+  width: 30px;
+  height: 8px;
+}
+
+.movielst{
+  padding-top: 5%;
+}
+
+.movielst h4{
+    color: black;
+    padding-bottom: 2%;
+    font-weight: 600;
+}
+
+.movielst p{
+    font-weight: 500;
+}
+
+.listnum{
+    color: black;
+    font-weight: 500;
+    padding-bottom: 1%;
+}
+
+.movie-card {
+    position: relative !important;
+    border: none !important;
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 250px !important;
+    background-color: transparent !important;
+  }
+  
+  .movie-card img {
+    border-radius: 16px;
+    width: 100%;
+    height: 370px;
+  }
+  
+  .movie-card-body {
+    text-align: left;
+  }
+  
+  .movie-card .fa-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .movie-card .movie-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .movie-card .movie-year {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .movie-card .movie-genre {
+    font-size: 14px;
+    color: darkgray;
+  }
+
+  .movie-card .heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(128, 128, 128, 0.7);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .movie-card .heart-icon svg {
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .movie-card .heart-icon.active svg {
+    color: red;
+  }
+  
+  .fav-movies {
+    padding: 2rem 0;
+  }
+  
+  .fav-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .backButton {
+    display: flex !important;
+    width: 45px;
+    height: 45px;
+    border-radius: 50% !important;
+    font-size: 2.0rem !important;
+  }
+  
+  .fav-title {
+    margin-left: 1rem;
+    color: #000;
+  }
+  
+  .fav-search-bar-container {
+    margin-left: auto;
+  }
+  
+  .fav-search-bar-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-height: 40px;
+    padding: 0.5rem 1rem;
+    background-color: white;
+  }
+  
+  .favSearchIcon {
+    margin-right: 0.5rem;
+    color: #ccc;
+  }
+  
+  .fav-search-input {
+    border: none !important;
+    background-color: transparent !important;
+    flex: 1 ;
+    font-family: "Inter";
+  }
+
+  .fav-search-input:-webkit-search-cancel-button{
+    color: black;  
+}
+
+
+  
+  
+
+
+
+
+
